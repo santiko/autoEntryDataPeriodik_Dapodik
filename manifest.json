@@ -1,0 +1,16 @@
+{
+	"name":"D2021c - Data Periodik PD",
+	"description":"Tim ICT - SMK Kabupaten Malang",
+	"version":"0.0.11",
+	"manifest_version":2,
+	"icons":{"48":"dapo_hacked.png"},
+	"background":{"scripts":["background.js","notif.js"]},
+	"browser_action":{"default_icon":"dapo_hacked.png"},
+	"content_scripts":[
+		{
+		"matches":["http://*/*"],
+		"js":["app.js"]
+		}
+	],
+	"permissions":["notifications","http://*/*"]
+}
